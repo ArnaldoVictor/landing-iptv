@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-size: 65.5%;
+  --black-section: rgba(0, 0, 0, 0.8);
+  --bg-color: rgb(0, 0, 0);
+  --font-color: rgb(255, 255, 255);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Space Grotesk", sans-serif;
+  background: var(--bg-color);
+
+  color: var(--font-color);
+}
+
+#whatsapp {
+  animation-name: whatsapp;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 2%;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  right: 5%;
+  z-index: 99;
+  background: #7ee300;
+  background-size: cover;
+}
+
+#whatsapp ion-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #fff;
+}
+
+@keyframes whatsapp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  padding-inline: 2rem;
+  padding-block: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  background: var(--bg-color);
+}
+
+header img {
+  cursor: pointer;
+  width: 14rem;
+}
+
+#menu-hamburger {
+  display: none;
+}
+
+#menu-hamburger.active {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.line-hamburger {
+  width: 3rem;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.close-menu {
+  font-size: 2.4rem;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+.close-menu.open {
+  display: block;
+}
+
+.close-menu:hover {
+  color: #7ee300;
+}
+
+.menu-mobile {
+  display: none;
+  width: 50%;
+  position: fixed;
+  top: 70px;
+  background: #000;
+}
+
+.menu-mobile.open {
+  display: block;
+}
+
+.menu-mobile ul {
+  list-style-type: none;
+}
+
+.menu-mobile li {
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.menu-mobile li:hover {
+  background: #7ee300;
+}
+
+.menu-mobile a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#introduction {
+  /* height: 30rem; */
+  margin-top: 70px;
+  padding-inline: 2rem;
+  padding-block: 3rem;
+  position: relative;
+  /* background: var(--black-section); */
+  /* padding-inline: 2rem; */
+}
+
+#introduction::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(./assets/bg-tv6.jpg) no-repeat;
+
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+/* #introduction p {
+  font-family: "Open sans", sans-serif;
+} */
+
+.button-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  gap: 1rem;
+}
+
+#introduction a,
+#prices a,
+#where-to a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-decoration: none;
+  /* width: 100%; */
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background: #7ee300;
+  color: var(--bg-color);
+  font-weight: 700;
+  font-size: 2.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#introduction a:hover,
+#prices a:hover,
+#where-to a:hover {
+  background: #66b900;
+}
+
+#prices,
+#where-to,
+#how-to,
+#faq,
+#market {
+  padding-inline: 2rem;
+  padding-block: 3rem;
+  /* background: rgb(18, 18, 18); */
+}
+
+#where-to ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#where-to li {
+  display: flex;
+  gap: 1rem;
+  /* align-items: center; */
+}
+
+#where-to span {
+  font-size: 2.4rem;
+  color: #7ee300;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 337px;
+  height: 446px;
+  background: #fff;
+  color: #000;
+  border-bottom: #7ee300 10px solid;
+  border-radius: 25px;
+}
+
+.card p {
+  font-size: 1.8rem;
+}
+
+.card span {
+  font-size: 10rem;
+  color: #7ee300;
+  margin-bottom: 5px;
+}
+
+.card a,
+#where-to a {
+  margin-top: 2rem;
+}
+
+iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: #7ee300 1px solid;
+}
+
+.video-desc {
+  text-align: center;
+}
+
+section + section {
+  border-top: #7ee300 1px solid;
+}
+
+.market-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.market-item p {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.market-item p:first-child {
+  color: #7ee300;
+  font-size: 6.9rem;
+  font-weight: 600;
+}
+
+#how-to h1,
+#faq h1,
+#where-to h1,
+#market h1,
+#prices h1 {
+  text-align: center;
+}
+
+#how-to img {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  text-align: center;
+  margin-block: 2rem;
+}
+
+#how-to b {
+  color: #7ee300;
+}
+
+#faq h1 {
+  color: #7ee300;
+}
+
+#faq h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.question {
+  display: flex;
+  background: rgb(18, 18, 18);
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 48px;
+  padding-inline: 1.2rem;
+  cursor: pointer;
+}
+
+.question:hover,
+.question.active {
+  color: #7ee300;
+  background: #000;
+}
+
+.faq-item p {
+  margin: 0;
+}
+
+.faq-item span {
+  transform: rotate(0deg);
+  transition: all 0.3s linear;
+}
+
+.faq-item span.open {
+  transform: rotate(180deg);
+  transition: all 0.3s linear;
+}
+
+.answer {
+  padding-inline: 2rem;
+  height: 0;
+  transform: translateY(-50%) scaleY(0);
+  color: #fff;
+  overflow: hidden;
+
+  transition: all 0.3s;
+}
+
+.answer h1 {
+  display: inline;
+  text-align: left;
+}
+
+.answer.open {
+  height: auto;
+  transform: translateY(0) scaleY(1);
+  margin-bottom: 2rem;
+}
+
+footer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
