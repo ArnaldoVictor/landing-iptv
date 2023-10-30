@@ -27,6 +27,8 @@ const toggleMenu = (item) => {
 
 const menuHamburger = document.querySelector('#menu-hamburger')
 const closeMenu = document.querySelector('.close-menu')
+const menuMobile = document.querySelector('.menu-mobile')
+const linksMenuMobile = menuMobile.querySelectorAll('a')
 
 menuHamburger.addEventListener('click', ()=>{
     const menu = document.querySelector('.menu-mobile')
@@ -42,3 +44,12 @@ closeMenu.addEventListener('click', ()=>{
     menuHamburger.classList.toggle('active')
     closeMenu.classList.toggle('open')
 })
+
+for (const link of linksMenuMobile){
+    link.addEventListener('click', ()=>{
+        const menu = document.querySelector('.menu-mobile')
+        menu.classList.toggle('open')
+        menuHamburger.classList.toggle('active')
+        closeMenu.classList.toggle('open')
+    })
+}
