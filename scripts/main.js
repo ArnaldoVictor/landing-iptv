@@ -11,7 +11,7 @@ const scrollReveal = ScrollReveal({
 });
 
 scrollReveal.reveal(
-  "#introduction h1, #introduction p, #introduction .button-list, iframe, #prices .card, #prices h1, #prices p, #where-to h1, #where-to p, #where-to li, #where-to a, #market h1, .market-item p, #how-to h1, #how-to p, #how-to img, #faq h1, #faq h2, .faq-item, footer",
+  "#introduction h1, #introduction p, #introduction .button-list, iframe, #prices .card, #prices h1, #prices p, #where-to h1, #where-to p, #where-to li, #where-to a, #market h1, .market-item p, #how-to h1, #how-to p, #how-to img, #faq h1, #faq h2, .faq-item",
   { delay: 100 }
 );
 
