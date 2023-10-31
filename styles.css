@@ -47,11 +47,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 2%;
+  bottom: 20px;
   width: 4.8rem;
   height: 4.8rem;
   border-radius: 50%;
-  right: 5%;
+  right: 20px;
   z-index: 99;
   background: #7ee300;
   background-size: cover;
