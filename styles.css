@@ -315,7 +315,7 @@ section + section {
 }
 
 .market-item p {
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
@@ -417,4 +417,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer p {
+  font-size: 1.4rem;
 }
