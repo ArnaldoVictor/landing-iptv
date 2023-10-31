@@ -55,3 +55,7 @@ for (const link of linksMenuMobile) {
     closeMenu.classList.toggle("open");
   });
 }
+
+new Counter('#tv-count');
+new Counter('#subscribers-count');
+new Counter('#clients-count');
