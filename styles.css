@@ -21,6 +21,24 @@ body {
   color: var(--font-color);
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 #whatsapp {
   animation-name: whatsapp;
   animation-duration: 1s;
