@@ -95,7 +95,7 @@ header img {
 }
 
 .close-menu {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   cursor: pointer;
   color: #fff;
   display: none;
@@ -110,19 +110,29 @@ header img {
 }
 
 .menu-mobile {
-  display: none;
-  width: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 140px;
   position: fixed;
   top: 70px;
+  left: -6000px;
   background: #000;
+
+  transition: left 0.2s ease-in-out;
 }
 
 .menu-mobile.open {
-  display: block;
+  left: 0;
 }
 
 .menu-mobile ul {
   list-style-type: none;
+  width: 100%;
+  text-align: center;
 }
 
 .menu-mobile li {
@@ -137,6 +147,7 @@ header img {
 .menu-mobile a {
   color: #fff;
   text-decoration: none;
+  font-size: 3rem;
 }
 
 #introduction {
