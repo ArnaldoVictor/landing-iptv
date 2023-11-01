@@ -1,10 +1,10 @@
 <h1 align="center"> Landing page Tvmaxbr </h1>
 
 <p align="center">
-  <a href="#-demo">Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#%EF%B8%8F%EF%B8%8F-demo">Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
 </p>
 
 <p align="center">
@@ -37,7 +37,7 @@ This project was developed with the following technologies:
 
 This is a Landing Page project aimed at creating an engaging and informative web page designed to promote and facilitate the sale of P2P services. The landing page will serve as the online storefront for individuals looking to offer their services directly to potential customers, cutting out intermediaries and traditional service providers.
 
-## :memo: Licença
+## :memo: License
 
 MIT © <a href="https://github.com/ArnaldoVictor">Arnaldo Victor</a>
 
