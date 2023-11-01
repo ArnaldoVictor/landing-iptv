@@ -29,9 +29,9 @@ Here is a working live demo : https://arnaldovictor.github.io/landing-iptv/
 
 This project was developed with the following technologies:
 
-- HTML5 e CSS3
+- HTML5 and CSS3
 - JavaScript
-- Git e Github
+- Git and Github
 
 ## 💻 Project
 
